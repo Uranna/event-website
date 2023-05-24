@@ -49,6 +49,10 @@ export const Global = createGlobalStyle`
     font-family: 'Segoe UI';
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-size: 16px;
     background: ${props => props.theme.bg.body};
@@ -61,5 +65,11 @@ export const Global = createGlobalStyle`
 
   ul, ol {
     list-style: none;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 `;

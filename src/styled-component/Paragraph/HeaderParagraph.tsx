@@ -10,7 +10,7 @@ export const HeaderParagraph = styled(Paragraph)<Props>`
 	margin-bottom: 1.5rem;
 
 	&:last-child {
-		margin-bottom: 0;
+		margin-bottom: 3rem;
 	}
 
 	${(props) => props.theme.media.mobile} {
