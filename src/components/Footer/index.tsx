@@ -4,9 +4,9 @@ import {
 	Paragraph,
 	Image,
 	FooterStyled,
-} from '../../styled-component';
+} from '@/styled-component';
 
-import logo from './../../assets/image/full-logo.png';
+import logo from '@/assets/image/full-logo.png';
 
 function Footer() {
 	return (
