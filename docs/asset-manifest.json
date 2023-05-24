@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "./static/js/main.18ed560d.js",
+    "static/media/3slide.png": "./static/media/3slide.bdb68534a505eadce381.png",
+    "static/media/2slide.png": "./static/media/2slide.2d5d34cc362dbe8c3fc6.png",
+    "static/media/1slide.png": "./static/media/1slide.dc668ae1000d6a47c277.png",
+    "static/media/speaker-avatar.png": "./static/media/speaker-avatar.d945972d8693f74f0589.png",
+    "index.html": "./index.html",
+    "static/media/close.svg": "./static/media/close.f4599fc9e746dc30bdce46890f9b6cce.svg",
+    "static/media/menu.svg": "./static/media/menu.d587d8a0b52b18df0447fe9b2d8af38e.svg",
+    "main.18ed560d.js.map": "./static/js/main.18ed560d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.18ed560d.js"
+  ]
+}
