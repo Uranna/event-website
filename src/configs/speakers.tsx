@@ -1,4 +1,4 @@
-import avatar from './../assets/image/speaker-avatar.png';
+import avatar from '@/assets/image/speaker-avatar.png';
 
 export const speakers = [
 	{

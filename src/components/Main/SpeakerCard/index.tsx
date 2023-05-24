@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Paragraph, RoundedImage, Card } from '../styled-component';
+import { Paragraph, RoundedImage, Card } from '@/styled-component';
 
 interface SpeakerCardProps {
 	image: string;

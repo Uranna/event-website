@@ -7,15 +7,19 @@ import {
 	Flex,
 	HiddenBlock,
 	WelcomeParagraph,
-} from '../../styled-component';
-import { example } from '../../configs/example';
-import { speakers } from '../../configs/speakers';
-import SpeakerCard from '../SpeakerCard';
+	Table,
+	OverflowBlock,
+} from '@/styled-component';
+import { example } from '@/configs/example';
+import { speakers } from '@/configs/speakers';
+import SpeakerCard from './SpeakerCard';
+import Gallery from './Gallery';
+import { price } from '@/configs/price';
 
 function Main() {
 	return (
 		<main>
-			<Section>
+			<Section id='registration'>
 				<Container>
 					<Flex gapX='30px' gapY='5.75rem' className='tablet'>
 						<HiddenBlock className='flex mobile-hidden'>
@@ -52,7 +56,45 @@ function Main() {
 				</Container>
 			</Section>
 
-			<Section background='transparent'>
+			<Section background='transparent' id='cost-of-participation'>
+				<Container>
+					<Title2 margin='0 0 2rem 0' className='title-cost'>
+						Стоимость участия
+						<br />
+						<span className='small-text'>(на 1 человека)</span>
+					</Title2>
+
+					<OverflowBlock>
+						<Table minWidth='640px'>
+							<thead>
+								<tr>
+									{price.header.map((cell) => (
+										<th key={cell.id}>{cell.title}</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{price.body.map((row) => (
+									<tr key={row.id}>
+										{row.cell.map((cell) => (
+											<td key={cell.id}>{cell.title}</td>
+										))}
+									</tr>
+								))}
+							</tbody>
+						</Table>
+					</OverflowBlock>
+				</Container>
+			</Section>
+
+			<Section>
+				<Container>
+					<Title2 margin='0 0 2rem 0'>Галерея</Title2>
+				</Container>
+				<Gallery />
+			</Section>
+
+			<Section background='transparent' id='speakers'>
 				<Container>
 					<Title2 margin='0 0 2rem 0'>
 						<span className='pc'>Наши спикеры</span>

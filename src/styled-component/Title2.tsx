@@ -12,6 +12,14 @@ export const Title2 = styled.h2<Props>`
 	color: ${(props) => props.theme.color.text};
 	margin: ${({ margin = '0 0 1rem 0' }) => margin};
 
+	&.title-cost {
+		line-height: 1;
+	}
+
+	& .small-text {
+		font-size: 1rem;
+	}
+
 	& .tablet,
 	& .mobile {
 		display: none;
@@ -32,6 +40,7 @@ export const Title2 = styled.h2<Props>`
 		}
 
 		${(props) => props.theme.media.mobile} {
+			text-align: left;
 			& .pc,
 			& .tablet {
 				display: none;

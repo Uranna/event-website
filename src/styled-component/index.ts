@@ -10,6 +10,7 @@ export { Burger, NavStyled, NavList, NavLink } from './Nav';
 export { Container } from './Container';
 export { Section } from './Section';
 
+export { OverflowBlock } from './OverflowBlock';
 export { HiddenBlock } from './Hidden';
 
 export { Flex } from './Flex';
@@ -20,5 +21,7 @@ export { Paragraph, HeaderParagraph, WelcomeParagraph } from './Paragraph';
 
 export { Image, RoundedImage } from './Image';
 export { Button } from './Button';
+export { Table } from './Table';
 
 export { Card } from './Card';
+export { GalleryContainer, GalleryImage, GalleryButtonsContainer, GalleryButton } from './Gallery';
